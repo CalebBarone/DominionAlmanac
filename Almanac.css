@@ -1,0 +1,74 @@
+*
+{
+    font-size: 1.25em;
+}
+
+.Card
+{
+    height: 6vh;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    text-align: center;
+    align-content: center;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+#Search
+{
+    width: 99.2%;
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 1.5em;
+    position: fixed;
+    top:.05em
+}
+
+#Back
+{
+    position: fixed;
+    bottom: 8px;
+    height: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    right: 8px;
+    left: 8px;
+}
+
+.hide
+{
+    display:none;
+}
+
+.CostImg
+{
+    height: .4em;
+}
+
+.CardImg
+{
+    height: 8em;
+    margin-bottom: 2.5%;
+}
+
+.CardImgWide
+{
+    width: 8em;
+    margin-bottom: 2.5%;
+}
+
+.TextCoin
+{
+    position: relative;
+    top: 2px;
+}
+
+#InfoFAQ
+{
+    font-size: large;
+}
+
+#Cards, #Info
+{
+    margin-top: 2em;
+}
