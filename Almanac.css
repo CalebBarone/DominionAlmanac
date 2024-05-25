@@ -5,7 +5,8 @@
 
 .Card
 {
-    height: 6vh;
+    min-height: 6vh;
+    height: fit-content;
     margin-top: 4px;
     margin-bottom: 4px;
     text-align: center;
