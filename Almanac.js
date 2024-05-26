@@ -1,10 +1,11 @@
 let scrollPos;
 
-window.addEventListener("popstate", (e) => {
-   e.preventDefault();
-   Back();
-   history.pushState(null, null, window.top.location.pathname + window.top.location.search);
-})
+history.pushState(null, null, window.top.location.pathname + window.top.location.search);
+        window.addEventListener('popstate', (e) => {
+            e.preventDefault();
+            Back();
+            history.pushState(null, null, window.top.location.pathname + window.top.location.search);
+        });
 addEventListener("load", function()
 {
     document.getElementById("Search").addEventListener("input", Search)
