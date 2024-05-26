@@ -13,12 +13,13 @@ addEventListener("load", function()
 
 function DReady()
 {
-   document.addEventListener("backbutton", onBackKeyDown)
+   document.addEventListener("backbutton", onBackKeyDown, false)
 }
 
-function onBackKeyDown()
+function onBackKeyDown(e)
 {
-   Back()
+   e.preventDefault();
+   Back();
 }
 
 function Populate(f)
