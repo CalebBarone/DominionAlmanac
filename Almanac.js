@@ -6,9 +6,20 @@ addEventListener("load", function()
     document.getElementById("Back").addEventListener("click", Back)
     document.getElementById("Back").classList.add("hide");
     document.getElementById("Info").classList.add("hide");
+    document.addEventListener("deviceready", DReady)
 
     Populate();
 });
+
+function DReady()
+{
+   document.addEventListener("backbutton", onBackKeyDown)
+}
+
+function onBackKeyDown()
+{
+   Back()
+}
 
 function Populate(f)
 {
