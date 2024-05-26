@@ -1,4 +1,10 @@
 let scrollPos;
+
+window.addEventListener("popstate", (e) => {
+   e.preventDefault();
+   Back();
+   history.pushState(null, null, window.top.location.pathname + window.top.location.search);
+})
 addEventListener("load", function()
 {
     document.getElementById("Search").addEventListener("input", Search)
@@ -6,21 +12,10 @@ addEventListener("load", function()
     document.getElementById("Back").addEventListener("click", Back)
     document.getElementById("Back").classList.add("hide");
     document.getElementById("Info").classList.add("hide");
-    document.addEventListener("deviceready", DReady)
+    //document.addEventListener("deviceready", DReady)
 
     Populate();
 });
-
-function DReady()
-{
-   document.addEventListener("backbutton", onBackKeyDown, false)
-}
-
-function onBackKeyDown()
-{
-   //e.preventDefault();
-   Back();
-}
 
 function Populate(f)
 {
