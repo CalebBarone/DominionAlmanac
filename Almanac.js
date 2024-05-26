@@ -16,9 +16,9 @@ function DReady()
    document.addEventListener("backbutton", onBackKeyDown, false)
 }
 
-function onBackKeyDown(e)
+function onBackKeyDown()
 {
-   e.preventDefault();
+   //e.preventDefault();
    Back();
 }
 
