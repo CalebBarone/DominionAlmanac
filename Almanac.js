@@ -193,6 +193,7 @@ function cardImage(name, type)
       case "Artifact":
       case "Boon":
       case "Way":
+      case "Prophecy":
          return `<img class="CardImgWide" src="./Images/320px-${name}.jpg">`;
       default:
          return `<img class="CardImg" src="./Images/200px-${name}.jpg">`;
@@ -266,7 +267,8 @@ const Colors =
     Project: "#EE888B",
     State: "#F5D2D2",
     Trait: "#C8A2C8",
-    Way: "#BDF6FE"
+    Way: "#BDF6FE",
+    Prophecy: "#34BAEB"
 }
 
 const Cards = 
@@ -7580,5 +7582,473 @@ const Cards =
       ],
       "Expansion": "Seaside, 2E",
       "FAQ": "- When you play this, you get +3 Cards and +1 Action, but at the start of your next turn, you have to discard 2 cards.<br>- If you have only one card left in hand you discard that one, and if you have no cards you don't discard any.<br>- When you have multiple Duration cards doing things at the start of your turn, you can put them in an order to your advantage; for example if you have four Tide Pools and a Wharf, you could discard all of your cards to the Tide Pools, then draw the Wharf cards."
-   }
+   },
+    {
+      "Name": "Alley",
+      "Cost": "4",
+      "Type": [
+         "Action",
+         "Shadow"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Aristocrat",
+      "Cost": "3",
+      "Type": [
+         "Action"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Artist",
+      "Cost": "d8",
+      "Type": [
+         "Action"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Change",
+      "Cost": "4",
+      "Type": [
+         "Action"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Craftsman",
+      "Cost": "3",
+      "Type": [
+         "Action"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Daimyo",
+      "Cost": "d6",
+      "Type": [
+         "Action",
+         "Command"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Fishmonger",
+      "Cost": "2",
+      "Type": [
+         "Action",
+         "Shadow"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Gold Mine",
+      "Cost": "5",
+      "Type": [
+         "Action"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Imperial Envoy",
+      "Cost": "5",
+      "Type": [
+         "Action"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Kitsune",
+      "Cost": "5",
+      "Type": [
+         "Action",
+         "Attack",
+         "Omen"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Litter",
+      "Cost": "5",
+      "Type": [
+         "Action"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Mountain Shrine",
+      "Cost": "d5",
+      "Type": [
+         "Action",
+         "Omen"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Ninja",
+      "Cost": "4",
+      "Type": [
+         "Action",
+         "Attack",
+         "Shadow"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Poet",
+      "Cost": "4",
+      "Type": [
+         "Action",
+         "Omen"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Rice",
+      "Cost": "7",
+      "Type": [
+         "Treasure"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Rice Broker",
+      "Cost": "5",
+      "Type": [
+         "Action"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "River Shrine",
+      "Cost": "4",
+      "Type": [
+         "Action",
+         "Omen"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Riverboat",
+      "Cost": "3",
+      "Type": [
+         "Action",
+         "Duration"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Ronin",
+      "Cost": "5",
+      "Type": [
+         "Action",
+         "Shadow"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Root Cellar",
+      "Cost": "3",
+      "Type": [
+         "Action"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Rustic Village",
+      "Cost": "4",
+      "Type": [
+         "Action",
+         "Omen"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Samurai",
+      "Cost": "6",
+      "Type": [
+         "Action",
+         "Duration",
+         "Attack"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Snake Witch",
+      "Cost": "2",
+      "Type": [
+         "Action",
+         "Attack"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Tanuki",
+      "Cost": "5",
+      "Type": [
+         "Action",
+         "Shadow"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Tea House",
+      "Cost": "5",
+      "Type": [
+         "Action",
+         "Omen"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Amass",
+      "Cost": "2",
+      "Type": [
+         "Event"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Asceticism",
+      "Cost": "2",
+      "Type": [
+         "Event"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Continue",
+      "Cost": "d8",
+      "Type": [
+         "Event"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Credit",
+      "Cost": "2",
+      "Type": [
+         "Event"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Foresight",
+      "Cost": "2",
+      "Type": [
+         "Event"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Gather",
+      "Cost": "7",
+      "Type": [
+         "Event"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Kintsugi",
+      "Cost": "3",
+      "Type": [
+         "Event"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Practice",
+      "Cost": "3",
+      "Type": [
+         "Event"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Receive Tribute",
+      "Cost": "5",
+      "Type": [
+         "Event"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Sea Trade",
+      "Cost": "4",
+      "Type": [
+         "Event"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Approaching Army",
+      "Cost": "",
+      "Type": [
+         "Prophecy"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Biding Time",
+      "Cost": "",
+      "Type": [
+         "Prophecy"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Bureaucracy",
+      "Cost": "",
+      "Type": [
+         "Prophecy"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Divine Wind",
+      "Cost": "",
+      "Type": [
+         "Prophecy"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Enlightenment",
+      "Cost": "",
+      "Type": [
+         "Prophecy"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Flourishing Trade",
+      "Cost": "",
+      "Type": [
+         "Prophecy"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Good Harvest",
+      "Cost": "",
+      "Type": [
+         "Prophecy"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Great Leader",
+      "Cost": "",
+      "Type": [
+         "Prophecy"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Growth",
+      "Cost": "",
+      "Type": [
+         "Prophecy"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Harsh Winter",
+      "Cost": "",
+      "Type": [
+         "Prophecy"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Kind Emperor",
+      "Cost": "",
+      "Type": [
+         "Prophecy"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Panic",
+      "Cost": "",
+      "Type": [
+         "Prophecy"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Progress",
+      "Cost": "",
+      "Type": [
+         "Prophecy"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Rapid Expansion",
+      "Cost": "",
+      "Type": [
+         "Prophecy"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
+    {
+      "Name": "Sickness",
+      "Cost": "",
+      "Type": [
+         "Prophecy"
+      ],
+      "Expansion": "Rising Sun",
+      "FAQ": "..."
+   },
    ]
