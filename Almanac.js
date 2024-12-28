@@ -2298,7 +2298,7 @@ const Cards =
          "Ruins"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- When you play this, you just get +^COIN1^."
    },
     {
       "Name": "Altar",
@@ -2307,7 +2307,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- You trash a card from your hand if you can, and then gain a card whether or not you trashed one.<br>- Neither step is optional."
    },
     {
       "Name": "Armory",
@@ -2316,7 +2316,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- The card you gain goes directly to the top of your deck.<br>- With Trader, if you use its Reaction on the gained card, you'll get a Silver in your discard pile, not a Silver on your deck.<br>- If the card would be gained into your hand (such as Guardian, Ghost Town, Night Watchman, or Den of Sin) it is gained onto your deck instead."
    },
     {
       "Name": "Band of Misfits",
@@ -2326,7 +2326,7 @@ const Cards =
          "Command"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- This plays a non-Command Action card from the Supply costing less than it.<br>- Command is a type that appears on cards like this; it has no meaning beyond stopping these cards from playing each other.<br>- Band of Misfits can only play the top card of a Supply pile.<br>- The played Action card stays in the Supply; if an effect tries to move it, such as Death Cart trying to trash itself, it will fail to move it. If the card checks to see if it was trashed, like Death Cart does, that part will fail, but if it does not, like Acting Troupe (from Renaissance), the rest of the effect will still happen.<br>- Since the played card is not in play, \"while this is in play\" abilities (such as Highway's from Hinterlands) will not do anything.<br>- Leave Band of Misfits in play until the Clean-up of the turn the card it played would have left play. Normally that means you'll discard it that turn, but if Band of Misfits plays a Duration card (Duration cards are in other expansions), it will stay out like the Duration card would have, and if Band of Misfits plays a card like Throne Room that plays a Duration card twice, it will stay out in the same way the Throne Room would have.<br>- If you play Band of Misfits multiple times, such as with Throne Room, leave it out until the Clean-up of the turn that the last of the cards it played would have left play."
    },
     {
       "Name": "Bandit Camp",
@@ -2335,7 +2335,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- Draw a card before gaining a Spoils.<br>- The Spoils comes from the Spoils pile, which is not part of the Supply.<br>- If there are no Spoils cards left, you do not get one."
    },
     {
       "Name": "Beggar",
@@ -2345,7 +2345,7 @@ const Cards =
          "Reaction"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- When you play this, you gain three Coppers, putting them into your hand.<br>- If there are not three Coppers left, just gain as many as you can.<br>- When another player plays an Attack card, you may discard this from your hand.<br>- If you do, you gain two Silvers, putting one on your deck and the other into your discard pile.<br>- If there is only one Silver left, put it on your deck; if there are no Silvers left, you do not gain any."
    },
     {
       "Name": "Catacombs",
@@ -2354,7 +2354,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- When you play this, you look at the top three cards of your deck, and either put all three into your hand, or discard all three and draw the next three cards.<br>- If you discard them and have to shuffle to draw three cards, you will shuffle in the cards you discarded and may end up drawing some of them.<br>- When you trash Catacombs, you gain a card costing less than it.<br>- This happens whether Catacombs is trashed on your turn or someone else's, and no matter who has the card that trashed it.<br>- Putting the 3 cards you're looking at into your hand will have no interaction with your -1 Card token and/or Way of the Chameleon. But if you discard those 3 cards, then the +3 Cards will be affected by your -1 Card token and/or Way of the Chameleon.<br>- If you play this with Elder and choose both its options, you won't get anything useful. You'll put the 3 cards you're looking at into your hand, but then you'll still discard them and draw 3 different cards.<br>- When you trash this with e.g. Remodel, you gain a card from Catacombs before you gain a card with Remodel."
    },
     {
       "Name": "Count",
@@ -2363,7 +2363,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- This card gives you two separate choices: first you either discard two cards, or put a card from your hand on top of your deck, or gain a Copper; after resolving that, you either get +^COIN3^, or trash your hand, or gain a Duchy.<br>- For example you might choose to discard two cards, then gain a Duchy.<br>- You can choose an option even if you cannot do it.<br>- If you trash multiple cards that do something when trashed at once, trash them all, then choose an order to resolve the things that happen due to them being trashed."
    },
     {
       "Name": "Counterfeit",
@@ -2372,7 +2372,7 @@ const Cards =
          "Treasure"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- When you play this, you get ^COIN1^ and +1 Buy, and you may play a Treasure card from your hand twice.<br>- If you choose to do that, you trash that Treasure.<br>- You still get any coins that Treasure gave you from playing it, despite trashing it.<br>- If you use Counterfeit to play Spoils twice, you will get +^COIN6^ (in addition to the ^COIN1^ from Counterfeit) and return Spoils to the Spoils pile; you will be unable to trash it.<br>- If you use Counterfeit to play a Treasure that does something special when you play it (such as another Counterfeit), you will do that thing twice.<br>- Counterfeit got errata in 2022 so that it can't play Treasure-Durations twice (like Astrolabe)."
    },
     {
       "Name": "Cultist",
@@ -2383,7 +2383,7 @@ const Cards =
          "Looter"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- When you play this, you draw two cards, then each other player gains a Ruins.<br>- Go in turn order starting to your left; each player takes the top Ruins, revealing the next one each time.<br>- If the Ruins pile runs out, players stop gaining them at that point.<br>- After giving out Ruins, you may play another Cultist from your hand.<br>- It can be one you just drew from playing Cultist, or one you already had in your hand.<br>- Playing a Cultist this way does not use up any extra Actions you were allowed to play due to cards like Fortress - the original Cultist uses up one Action and that is it.<br>- When you trash a Cultist, you draw three cards.<br>- Do this whether or not it is your turn, and whether or not the card that causes Cultist to be trashed was yours.<br>- If you trash a Cultist while revealing cards, such as to a Knight attack, you do not draw the revealed cards that are about to be discarded."
    },
     {
       "Name": "Dame Anna",
@@ -2394,7 +2394,7 @@ const Cards =
          "Knight"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- This is a pile in which each card is different.<br>- There is the same basic ability on each card, but also another ability unique to that card in the pile, and they all have different names.<br>- Shuffle the Knights pile before playing it, keeping it face down except for the top one, which is the only card that can be gained from the pile. See Additional Rules and Preparation.<br>- Follow the rules on Knights in order from top to bottom; Sir Michael causes players to discard before it trashes cards.<br>- The ability they have in common is, each other player reveals the top two cards of their deck, trashes one of them that they choose that costs from ^COIN3^ to ^COIN6^, and discards the rest; then, if a Knight was trashed, you trash the Knight you played that caused this trashing. Resolve this ability in turn order, starting with the player to your left.<br>- Cards with ^POTION^ (from Alchemy) or ^DEBT^ (from Empires) in the cost do not cost from ^COIN3^ to ^COIN6^.<br>- The player losing a card only gets a choice if both cards revealed cost from ^COIN3^ to ^COIN6^.<br>- If they both do and one is a Knight but the player picks the other card, that will not cause the played Knight to be trashed.<br>- If you choose to use the Knights with Black Market (a promotional card), put a Knight directly into the Black Market deck, rather than using the randomizer card.<br>- When playing Dame Anna, you may choose to trash zero, one, or two cards from your hand.<br>- \"If a Knight is trashed by this\" only applies to the attack portion of Dame Anna's ability. If you use the first part of her ability to trash a Knight from your own hand, that won't make you trash Dame Anna."
    },
     {
       "Name": "Dame Josephine",
@@ -2406,7 +2406,7 @@ const Cards =
          "Knight"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- This is a pile in which each card is different.<br>- There is the same basic ability on each card, but also another ability unique to that card in the pile, and they all have different names.<br>- Shuffle the Knights pile before playing it, keeping it face down except for the top one, which is the only card that can be gained from the pile. See Additional Rules and Preparation.<br>- Follow the rules on Knights in order from top to bottom; Sir Michael causes players to discard before it trashes cards.<br>- The ability they have in common is, each other player reveals the top two cards of their deck, trashes one of them that they choose that costs from ^COIN3^ to ^COIN6^, and discards the rest; then, if a Knight was trashed, you trash the Knight you played that caused this trashing. Resolve this ability in turn order, starting with the player to your left.<br>- Cards with ^POTION^ (from Alchemy) or ^DEBT^ (from Empires) in the cost do not cost from ^COIN3^ to ^COIN6^.<br>- The player losing a card only gets a choice if both cards revealed cost from ^COIN3^ to ^COIN6^.<br>- If they both do and one is a Knight but the player picks the other card, that will not cause the played Knight to be trashed.<br>- If you choose to use the Knights with Black Market (a promotional card), put a Knight directly into the Black Market deck, rather than using the randomizer card.<br>- Dame Josephine is also a Victory card, worth 2 ^VP^ at the end of the game. The Knights pile is not a Victory pile though, and does not get a counter for Trade Route (from Prosperity) even if Dame Josephine starts on top."
    },
     {
       "Name": "Dame Molly",
@@ -2417,7 +2417,7 @@ const Cards =
          "Knight"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- This is a pile in which each card is different.<br>- There is the same basic ability on each card, but also another ability unique to that card in the pile, and they all have different names.<br>- Shuffle the Knights pile before playing it, keeping it face down except for the top one, which is the only card that can be gained from the pile. See Additional Rules and Preparation.<br>- Follow the rules on Knights in order from top to bottom; Sir Michael causes players to discard before it trashes cards.<br>- The ability they have in common is, each other player reveals the top two cards of their deck, trashes one of them that they choose that costs from ^COIN3^ to ^COIN6^, and discards the rest; then, if a Knight was trashed, you trash the Knight you played that caused this trashing. Resolve this ability in turn order, starting with the player to your left.<br>- Cards with ^POTION^ (from Alchemy) or ^DEBT^ (from Empires) in the cost do not cost from ^COIN3^ to ^COIN6^.<br>- The player losing a card only gets a choice if both cards revealed cost from ^COIN3^ to ^COIN6^.<br>- If they both do and one is a Knight but the player picks the other card, that will not cause the played Knight to be trashed.<br>- If you choose to use the Knights with Black Market (a promotional card), put a Knight directly into the Black Market deck, rather than using the randomizer card."
    },
     {
       "Name": "Dame Natalie",
@@ -2428,7 +2428,7 @@ const Cards =
          "Knight"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- This is a pile in which each card is different.<br>- There is the same basic ability on each card, but also another ability unique to that card in the pile, and they all have different names.<br>- Shuffle the Knights pile before playing it, keeping it face down except for the top one, which is the only card that can be gained from the pile. See Additional Rules and Preparation.<br>- Follow the rules on Knights in order from top to bottom; Sir Michael causes players to discard before it trashes cards.<br>- The ability they have in common is, each other player reveals the top two cards of their deck, trashes one of them that they choose that costs from ^COIN3^ to ^COIN6^, and discards the rest; then, if a Knight was trashed, you trash the Knight you played that caused this trashing. Resolve this ability in turn order, starting with the player to your left.<br>- Cards with ^POTION^ (from Alchemy) or ^DEBT^ (from Empires) in the cost do not cost from ^COIN3^ to ^COIN6^.<br>- The player losing a card only gets a choice if both cards revealed cost from ^COIN3^ to ^COIN6^.<br>- If they both do and one is a Knight but the player picks the other card, that will not cause the played Knight to be trashed.<br>- If you choose to use the Knights with Black Market (a promotional card), put a Knight directly into the Black Market deck, rather than using the randomizer card."
    },
     {
       "Name": "Dame Sylvia",
@@ -2439,7 +2439,7 @@ const Cards =
          "Knight"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- This is a pile in which each card is different.<br>- There is the same basic ability on each card, but also another ability unique to that card in the pile, and they all have different names.<br>- Shuffle the Knights pile before playing it, keeping it face down except for the top one, which is the only card that can be gained from the pile. See Additional Rules and Preparation.<br>- Follow the rules on Knights in order from top to bottom; Sir Michael causes players to discard before it trashes cards.<br>- The ability they have in common is, each other player reveals the top two cards of their deck, trashes one of them that they choose that costs from ^COIN3^ to ^COIN6^, and discards the rest; then, if a Knight was trashed, you trash the Knight you played that caused this trashing. Resolve this ability in turn order, starting with the player to your left.<br>- Cards with ^POTION^ (from Alchemy) or ^DEBT^ (from Empires) in the cost do not cost from ^COIN3^ to ^COIN6^.<br>- The player losing a card only gets a choice if both cards revealed cost from ^COIN3^ to ^COIN6^.<br>- If they both do and one is a Knight but the player picks the other card, that will not cause the played Knight to be trashed.<br>- If you choose to use the Knights with Black Market (a promotional card), put a Knight directly into the Black Market deck, rather than using the randomizer card."
    },
     {
       "Name": "Death Cart",
@@ -2449,7 +2449,7 @@ const Cards =
          "Looter"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- When you play Death Cart, you may trash it or an Action card from your hand. You do not have to do either.<br>- If you do either you get +^COIN5^.<br>- When you gain a Death Cart, either from buying it or from gaining it some other way, you also gain two Ruins.<br>- You just take the top two, whatever they are.<br>- If there are not enough Ruins left, take as many as you can.<br>- The other players get to see which ones you got."
    },
     {
       "Name": "Feodum",
@@ -2458,7 +2458,7 @@ const Cards =
          "Victory"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- This is a Victory card, so use eight copies for games with two players, or 12 for games with three or more players.<br>- At the end of the game, each Feodum is worth 1 ^VP^ for every three Silvers in your deck, rounded down.<br>- For example if you have 11 Silvers, your Feodums are worth 3 ^VP^ each.<br>- If Feodum is trashed, you gain three Silvers.<br>- If there are not enough Silvers left, gain as many as you can."
    },
     {
       "Name": "Forager",
@@ -2467,7 +2467,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- Trash a card from your hand if you can.<br>- Whether or not you can, you still get +^COIN1^ per differently named Treasure in the trash, plus +1 Action and +1 Buy.<br>- Multiple copies of the same Treasure card do not increase how much you get.<br>- For example if the trash has four Coppers and a Counterfeit, you get +^COIN2^.<br>- First you trash a card, then you calculate how much ^COIN^ you get. The card you trash with Forager, if it is a Treasure, may contribute to this calculation.<br>- Effects that are triggered by trashing a card take place before calculating your +^COIN^. For instance, if you have Sewers, and you trash a card with Forager, whereupon Sewers lets you trash an additional card, a Treasure trashed by Sewers can also figure into the calculation.<br>- However, the amount of ^COIN^ Forager fields is calculated the instant after it trashes a card (once all when-trashed effects are resolved); do not wait until the Buy phase to check how many Treasures are in the trash.<br>- If Treasures are removed from the trash (with e.g. Treasurer), future Foragers will give less ^COIN^.<br>- If you have Capitalism, Forager will count Action-Treasures in the trash."
    },
     {
       "Name": "Fortress",
@@ -2476,7 +2476,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- When you play this, you draw a card and get +2 Actions.<br>- If this is trashed, you take it from the trash and put it into your hand.<br>- This happens no matter whose turn it is when Fortress is trashed.<br>- It is not optional.<br>- You still trashed Fortress, even though you got it back; for example if you play Death Cart and choose to trash Fortress, you did trash it and so get +^COIN5^.<br>- When you put Fortress in your hand after trashing it, it is not 'gained': you just put it in your hand. You can't reveal Trader or Watchtower to do something else with it.<br>- If a Possessed player's Fortress is trashed, the Possessing player chooses whether to put it back in hand immediately, as usual, or to set it aside with other trashed cards, to be returned to the Possessed player's discard pile at the end of the turn.<br>- If you trash a Fortress from the Supply with Lurker, you put the Fortress into your hand; it still doesn't count as being \"gained\"."
    },
     {
       "Name": "Graverobber",
@@ -2485,7 +2485,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- You choose either option, then do as much of it as you can; you can choose an option even if you will not be able to do it.<br>- You can look through the trash at any time.<br>- If you choose to gain a card from the trash, the other players get to see what it is, and it goes on top of your deck.<br>- If there is no card in the trash costing from ^COIN3^ to ^COIN6^, you will fail to gain one.<br>- Cards with ^POTION^ (from Alchemy) or ^DEBT^ (from Empires) in the cost do not cost from ^COIN3^ to ^COIN6^.<br>- If you choose instead to trash an Action card from your hand, the card you gain is put into your discard pile.<br>- Even if the card gained from the trash is one that would ordinarily be gained into your hand, such as Ghost Town, Night Watchman, or Den of Sin, it is gained onto your deck instead.<br>&nbsp;&nbsp;- This does not apply to Villa, which moves itself into your hand after it is gained.<br>- If you play this with Elder and choose both options, you have to do them in order. So you can't trash an Action card and immediately regain it."
    },
     {
       "Name": "Hermit",
@@ -2494,7 +2494,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- When you play this, look through your discard pile, and then you may choose to trash a card that is not a Treasure, from either your hand or your discard pile.<br>- You do not have to trash a card and cannot trash Treasures.<br>- After trashing or not, you must gain a card costing up to ^COIN3^.<br>- Then, at the end of your Buy phase, if you did not gain any cards during that Buy phase, you exchange the Hermit for a Madman. You return the Hermit to its pile, and you take a Madman from its pile (from outside the Supply) and put it into your discard pile.<br>- If you buy any cards, or gain a card during your Buy phase (e.g. if you buy Ball, or play a Hermit with March), you can't exchange the Hermit.<br>- If Hermit is not in play (e.g. it got trashed by Procession, or you played it with Band of Misfits), you can't exchange the Hermit.<br>- If there are no Madmen in the pile, you'll fail to exchange the Hermit.<br>- If you take multiple Buy phases in a turn (with e.g. Villa or Cavalry), Hermit will check each Buy phase to see if any cards were gained in it. So you can gain a Villa in your 1st Buy phase, and then gain nothing in your 2nd Buy phase, you'll exchange the Hermit.<br>- If you play Hermit after your Buy phase (e.g. you gain it at Night (with e.g. Vampire) or Clean-up (with e.g. Improve) and then play it with Innovation), you won't have the chance to exchange it this turn.<br>- If you Possess another player and make them play Hermit, they can't gain a card during their Buy phase, so they'll exchange it. But because they aren't gaining the Madman, it doesn't become yours."
    },
     {
       "Name": "Hovel",
@@ -2504,7 +2504,7 @@ const Cards =
          "Shelter"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- When you gain a Victory card, if Hovel is in your hand, you may trash it.<br>- You don't get anything for trashing Hovel; you just get to get rid of it.<br>- When a Hovel is revealed when playing Ambassador, it is not returned to the Supply (since it is not in the Supply) and opponents do not gain a copy of it.<br>- Hovel got errata in 2022 to trigger when you gain a Victory card, even if you didn't buy it. So if you gain a Province with Rebuild, you may trash your Hovel."
    },
     {
       "Name": "Hunting Grounds",
@@ -2513,7 +2513,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- When you play this, draw four cards.<br>- If this is trashed, you either gain a Duchy or three Estates, your choice.<br>- If you choose the three Estates and there are not three left, just gain as many as you can.<br>- If you trash Hunting Grounds and the Duchy pile is empty, you can still choose Duchy (and gain nothing)."
    },
     {
       "Name": "Ironmonger",
@@ -2522,7 +2522,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- First you draw a card, then you reveal the top card of your deck, then you either discard that card or put it back on top of your deck.<br>- Then you get bonuses based on the types of the card you revealed.<br>- A card with multiple types gives you all relevant bonuses; if you revealed Harem (from Intrigue), you would both draw a card and get +^COIN1^."
    },
     {
       "Name": "Junk Dealer",
@@ -2531,7 +2531,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- You draw before trashing.<br>- You have to trash a card from your hand if you can."
    },
     {
       "Name": "Madman",
@@ -2540,7 +2540,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- This card is not in the Supply; it can only be obtained via Hermit.<br>- When you play it, you get +2 Actions, return it to the Madman pile if you can (this is not optional), and if you did return it, you draw a card per card in your hand.<br>- For example if you had three cards in hand after playing Madman, you would draw three cards.<br>- Normally nothing will prevent you from returning Madman to the Madman pile, but you may fail to due to playing Madman twice via cards like Throne Room.<br>- So, for example, if you Procession a Madman, you will get +2 Actions, return Madman to the Madman pile, draw a card per card in your hand, get another +2 Actions, fail to return Madman and so not draw cards the second time, fail to trash Madman, and then gain an Action card costing exactly ^COIN1^ if you can.<br>- Since Madman is not in the Supply, the Madman pile being empty does NOT count towards the three-pile end-game condition."
    },
     {
       "Name": "Marauder",
@@ -2551,7 +2551,7 @@ const Cards =
          "Looter"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- First you gain a Spoils.<br>- It comes from the Spoils pile, which is not part of the Supply.<br>- If there are no Spoils cards left, you do not get one.<br>- Then each other player gains a Ruins.<br>- Go in turn order starting to your left; each player takes the top Ruins, revealing the next one each time.<br>- If the Ruins pile runs out, players stop gaining them at that point."
    },
     {
       "Name": "Market Square",
@@ -2561,7 +2561,7 @@ const Cards =
          "Reaction"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- When you play this, you draw a card and get +1 Action and +1 Buy.<br>- When one of your cards is trashed, you may discard Market Square from your hand.<br>- If you do, you gain a Gold.<br>- If there is no Gold left in the Supply, you do not gain one.<br>- You may discard multiple Market Squares when a single card of yours is trashed.<br>- Market Square has the same timing as \"when you trash this\" effects on other cards, such as Cultist, and you choose the order they happen in.<br>- Market Square doesn't have to have been in your hand when you trash a card; you could trash Cultist, drawing one or more Market Squares, and still discard them. This is allowed since your opponents can't see what's in your hand.<br>- Market Square cannot be discarded if you trash a card you don't own, such as with Lurker.<br>- If you trash a Haunted Mirror, you can discard Market Square for either a Gold or a Ghost, but not both."
    },
     {
       "Name": "Mercenary",
@@ -2571,7 +2571,7 @@ const Cards =
          "Attack"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- This card is not in the Supply; it can only be obtained via Urchin.<br>- When you play it, you may trash two cards from your hand.<br>- If you do, you draw two cards, get +^COIN2^, and each other player discards down to 3 cards in hand.<br>- Players who already have three or fewer cards in hand do nothing.<br>- Players responding to this Attack with cards like Beggar must choose to do so before you decide whether or not to trash two cards from your hand.<br>- If you play this with only one card in hand, you may choose to trash that card, but then will fail the \"if you did\" and will not draw cards and so on.<br>- If the cards you trash do things when trashed, first trash them both, then choose what order to resolve the things they do when trashed."
    },
     {
       "Name": "Mystic",
@@ -2580,7 +2580,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- You get +1 Action and +^COIN2^.<br>- Then name a card (\"Copper,\" for example - not \"Treasure\") and reveal the top card of your deck; if you named the card you revealed, put the revealed card into your hand.<br>- If you did not name the right card, put the revealed card back on top.<br>- Names need to match exactly for you to get the card; for example Sir Destry and Sir Martin do not match.<br>- You do not need to name a card available in the Supply."
    },
     {
       "Name": "Necropolis",
@@ -2590,7 +2590,7 @@ const Cards =
          "Shelter"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- This is an Action card; when you play it, you get +2 Actions.<br>- When a Necropolis is revealed when playing Ambassador, it is not returned to the Supply (since it is not in the Supply) and opponents do not gain a copy of it.<br>- When Necropolis is played according to Way of the Horse or Way of the Butterfly, it has no pile to return to and remains in your play area. (This is an advantage for Way of the Horse, but means Butterfly has no effect at all.)"
    },
     {
       "Name": "Overgrown Estate",
@@ -2600,7 +2600,7 @@ const Cards =
          "Shelter"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- This is a Victory card despite being worth 0 ^VP^.<br>- If this is trashed, you draw a card, right then, even in the middle of resolving another card.<br>- For example if you use Altar to trash Overgrown Estate, you first draw a card, then gain a card costing up to ^COIN5^.<br>- This card does not give you a way to trash itself, it merely does something if you manage to trash it.<br>- When an Overgrown Estate is revealed when playing Ambassador, it is not returned to the Supply (since it is not in the Supply) and opponents do not gain a copy of it.<br>- If you buy a Farmland and trash an Overgrown Estate, you immediately draw a card. However, even if the drawn card is a treasure, you are unable to play it since you must play all treasure before you buy a card."
    },
     {
       "Name": "Pillage",
@@ -2610,7 +2610,7 @@ const Cards =
          "Attack"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- First trash Pillage.<br>- Then, if you did, you gain two Spoils cards.†<br>- These come from the Spoils pile, which is not part of the Supply.<br>- If there are no Spoils cards left, you do not get one; if there is only one, you just get one.<br>- Then each other player with 5 or more cards in hand reveals their hand and discards a card of your choice.<br>- This happens in turn order, starting with the player to your left."
    },
     {
       "Name": "Poor House",
@@ -2619,7 +2619,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- First you get +^COIN4^.<br>- Then you reveal your hand, and lose ^COIN1^ per Treasure card in it.<br>- You can lose more than ^COIN4^ this way, but cannot go below ^COIN0^."
    },
     {
       "Name": "Procession",
@@ -2628,7 +2628,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- Playing a non-Duration Action card from your hand is optional (Duration cards are in other expansions).<br>- If you do play one, you then play it a second time, then trash it, then gain an Action card costing exactly ^COIN1^ more than it (even if somehow you failed to trash it).<br>- The gained card can be a Duration card.<br>- Gaining a card is not optional once you choose to play an Action card, but will fail to happen if no card in the Supply costs the exact amount needed.<br>- If something happens due to trashing the card - for example drawing three cards due to trashing a Cultist - that will resolve before you gain a card.<br>- This does not use up any extra Actions you were allowed to play due to cards like Fortress - Procession itself uses up one Action and that is it.<br>- You cannot play any other cards in between resolving the Procession-ed Action card multiple times, unless that Action card specifically tells you to (such as Procession itself does).<br>- If you Procession a Procession, you will play one Action twice, trash it, gain an Action card costing ^COIN1^ more, then play another Action twice, trash it, gain an Action card costing ^COIN1^ more, then trash the Procession and gain an Action costing ^COIN1^ more than it.<br>- If you Procession a card that gives you +1 Action, such as Vagrant, you will end up with two Actions to use afterwards, rather than the one you would have left if you just played two Vagrants.<br>- If you play Procession on a one-shot card, the stop-moving rule applies and the one-shot will end up where it instructs you to put it. For example, if you use Procession on Horse, the Horse is played, returning itself to its pile, then is played a second time, and then Procession tries and fails to trash it because it has already been moved. The Horse does not end up in the trash, but you still gain a ^COIN4^ Action since Procession's gaining is not conditional on the Horse being trashed. Similarly, if you play Procession on an Island, the Island is set aside on its mat and is not trashed by Procession, and you gain a ^COIN5^ Action anyway.<br>- Similarly, Reserve cards such as Guide also are not trashed by Procession, since they move themselves to the Tavern mat when played; and you gain a more expensive Action anyway."
    },
     {
       "Name": "Rats",
@@ -2637,7 +2637,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- Follow the instructions in order.<br>- First draw a card; then gain a Rats; then trash a card from your hand that is not a Rats card.<br>- If there are no Rats cards left, you do not gain one.<br>- If you have no cards in your hand other than Rats, reveal your hand and you do not trash a card.<br>- If Rats is trashed, you draw a card.<br>- This happens whether it is your turn or another player's, and regardless of which player has the card that trashed Rats.<br>- There are 20 copies of Rats, rather than the usual 10; the pile starts with all 20, regardless of the number of players."
    },
     {
       "Name": "Rebuild",
@@ -2646,7 +2646,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- You can name any card, whether or not it is being used this game or is a Victory card.<br>- Then reveal cards from your deck until you reveal a Victory card that is not what you named.<br>- If you run out of cards, shuffle your discard pile and continue, without shuffling in the revealed cards.<br>- If you run out of cards with no cards left in your discard pile, stop there, discard everything, and nothing more happens.<br>- If you did find a Victory card that was not what you named, you discard the other revealed cards, trash the Victory card, and gain a Victory card costing up to ^COIN3^ more than the trashed card."
    },
     {
       "Name": "Rogue",
@@ -2656,7 +2656,7 @@ const Cards =
          "Attack"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- If there is a card in the trash costing from ^COIN3^ to ^COIN6^, you have to gain one of them; it is not optional.<br>- You can look through the trash at any time.<br>- The other players get to see what card you took.<br>- The gained card goes into your discard pile.<br>- Cards with ^POTION^ (from Alchemy) or ^DEBT^ (from Empires) in the cost do not cost from ^COIN3^ to ^COIN6^.<br>- If there was no card in the trash costing from ^COIN3^ to ^COIN6^, you instead have each other player reveal the top two cards of their deck, trash one of them of their choice that costs from ^COIN3^ to ^COIN6^ (if possible), and discard the rest.<br>- Go in turn order, starting with the player to your left.<br>- Rogue is an Attack card, even when it is gaining cards from the trash rather than putting opponents' cards in the trash, and so an opponent can reveal a Reaction such as Diplomat when you play it even if it's not attacking them at the time."
    },
     {
       "Name": "Ruined Library",
@@ -2666,7 +2666,7 @@ const Cards =
          "Ruins"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- When you play this, you draw a card."
    },
     {
       "Name": "Ruined Market",
@@ -2676,7 +2676,7 @@ const Cards =
          "Ruins"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- When you play this, you just get +1 Buy."
    },
     {
       "Name": "Ruined Village",
@@ -2686,7 +2686,7 @@ const Cards =
          "Ruins"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- When you play this, you just get +1 Action."
    },
     {
       "Name": "Sage",
@@ -2695,7 +2695,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- If you run out of cards while revealing cards, shuffle your discard pile (not including the revealed cards) and continue.<br>- If you run out of cards to reveal and have no cards in your discard pile, stop there; discard everything revealed, and you do not get a card.<br>- If you find a card costing ^COIN3^ or more, put that one into your hand and discard the rest.<br>- For example you might reveal Copper, then Copper, then Curse, then Province; Province costs ^COIN8^, so you would stop there, put Province in your hand, and discard the two Coppers and the Curse."
    },
     {
       "Name": "Scavenger",
@@ -2704,7 +2704,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- Putting your deck into your discard pile is optional, but putting a card from your discard pile on top of your deck is not; you do it unless there are no cards in your discard pile.<br>- Putting your deck into your discard pile will not trigger cards that do something when discarded, such as Tunnel (from Hinterlands)."
    },
     {
       "Name": "Sir Bailey",
@@ -2715,7 +2715,7 @@ const Cards =
          "Knight"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- This is a pile in which each card is different.<br>- There is the same basic ability on each card, but also another ability unique to that card in the pile, and they all have different names.<br>- Shuffle the Knights pile before playing it, keeping it face down except for the top one, which is the only card that can be gained from the pile. See Additional Rules and Preparation.<br>- Follow the rules on Knights in order from top to bottom; Sir Michael causes players to discard before it trashes cards.<br>- The ability they have in common is, each other player reveals the top two cards of their deck, trashes one of them that they choose that costs from ^COIN3^ to ^COIN6^, and discards the rest; then, if a Knight was trashed, you trash the Knight you played that caused this trashing. Resolve this ability in turn order, starting with the player to your left.<br>- Cards with ^POTION^ (from Alchemy) or ^DEBT^ (from Empires) in the cost do not cost from ^COIN3^ to ^COIN6^.<br>- The player losing a card only gets a choice if both cards revealed cost from ^COIN3^ to ^COIN6^.<br>- If they both do and one is a Knight but the player picks the other card, that will not cause the played Knight to be trashed.<br>- If you choose to use the Knights with Black Market (a promotional card), put a Knight directly into the Black Market deck, rather than using the randomizer card."
    },
     {
       "Name": "Sir Destry",
@@ -2726,7 +2726,7 @@ const Cards =
          "Knight"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- This is a pile in which each card is different.<br>- There is the same basic ability on each card, but also another ability unique to that card in the pile, and they all have different names.<br>- Shuffle the Knights pile before playing it, keeping it face down except for the top one, which is the only card that can be gained from the pile. See Additional Rules and Preparation.<br>- Follow the rules on Knights in order from top to bottom; Sir Michael causes players to discard before it trashes cards.<br>- The ability they have in common is, each other player reveals the top two cards of their deck, trashes one of them that they choose that costs from ^COIN3^ to ^COIN6^, and discards the rest; then, if a Knight was trashed, you trash the Knight you played that caused this trashing. Resolve this ability in turn order, starting with the player to your left.<br>- Cards with ^POTION^ (from Alchemy) or ^DEBT^ (from Empires) in the cost do not cost from ^COIN3^ to ^COIN6^.<br>- The player losing a card only gets a choice if both cards revealed cost from ^COIN3^ to ^COIN6^.<br>- If they both do and one is a Knight but the player picks the other card, that will not cause the played Knight to be trashed.<br>- If you choose to use the Knights with Black Market (a promotional card), put a Knight directly into the Black Market deck, rather than using the randomizer card."
    },
     {
       "Name": "Sir Martin",
@@ -2737,7 +2737,7 @@ const Cards =
          "Knight"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- This is a pile in which each card is different.<br>- There is the same basic ability on each card, but also another ability unique to that card in the pile, and they all have different names.<br>- Shuffle the Knights pile before playing it, keeping it face down except for the top one, which is the only card that can be gained from the pile. See Additional Rules and Preparation.<br>- Follow the rules on Knights in order from top to bottom; Sir Michael causes players to discard before it trashes cards.<br>- The ability they have in common is, each other player reveals the top two cards of their deck, trashes one of them that they choose that costs from ^COIN3^ to ^COIN6^, and discards the rest; then, if a Knight was trashed, you trash the Knight you played that caused this trashing. Resolve this ability in turn order, starting with the player to your left.<br>- Cards with ^POTION^ (from Alchemy) or ^DEBT^ (from Empires) in the cost do not cost from ^COIN3^ to ^COIN6^.<br>- The player losing a card only gets a choice if both cards revealed cost from ^COIN3 to ^COIN6^.<br>- If they both do and one is a Knight but the player picks the other card, that will not cause the played Knight to be trashed.<br>- If you choose to use the Knights with Black Market (a promotional card), put a Knight directly into the Black Market deck, rather than using the randomizer card.<br>- Sir Martin only costs ^COIN4^, though the other Knights all cost ^COIN5^. When Sir Martin is the top card of the pile, it can be gained with an Armory and so on."
    },
     {
       "Name": "Sir Michael",
@@ -2748,7 +2748,7 @@ const Cards =
          "Knight"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- This is a pile in which each card is different.<br>- There is the same basic ability on each card, but also another ability unique to that card in the pile, and they all have different names.<br>- Shuffle the Knights pile before playing it, keeping it face down except for the top one, which is the only card that can be gained from the pile. See Additional Rules and Preparation.<br>- Follow the rules on Knights in order from top to bottom; Sir Michael causes players to discard before it trashes cards.<br>- The ability they have in common is, each other player reveals the top two cards of their deck, trashes one of them that they choose that costs from ^COIN3^ to ^COIN6^, and discards the rest; then, if a Knight was trashed, you trash the Knight you played that caused this trashing. Resolve this ability in turn order, starting with the player to your left.<br>- Cards with ^POTION^ (from Alchemy) or ^DEBT^ (from Empires) in the cost do not cost from ^COIN3^ to ^COIN6^.<br>- The player losing a card only gets a choice if both cards revealed cost from ^COIN3 to ^COIN6^.<br>- If they both do and one is a Knight but the player picks the other card, that will not cause the played Knight to be trashed.<br>- If you choose to use the Knights with Black Market (a promotional card), put a Knight directly into the Black Market deck, rather than using the randomizer card.<br>- Sir Michael causes players to discard before it trashes cards."
    },
     {
       "Name": "Sir Vander",
@@ -2759,7 +2759,7 @@ const Cards =
          "Knight"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- This is a pile in which each card is different.<br>- There is the same basic ability on each card, but also another ability unique to that card in the pile, and they all have different names.<br>- Shuffle the Knights pile before playing it, keeping it face down except for the top one, which is the only card that can be gained from the pile. See Additional Rules and Preparation.<br>- Follow the rules on Knights in order from top to bottom; Sir Michael causes players to discard before it trashes cards.<br>- The ability they have in common is, each other player reveals the top two cards of their deck, trashes one of them that they choose that costs from ^COIN3^ to ^COIN6^, and discards the rest; then, if a Knight was trashed, you trash the Knight you played that caused this trashing. Resolve this ability in turn order, starting with the player to your left.<br>- Cards with ^POTION^ (from Alchemy) or ^DEBT^ (from Empires) in the cost do not cost from ^COIN3^ to ^COIN6^.<br>- The player losing a card only gets a choice if both cards revealed cost from ^COIN3 to ^COIN6^.<br>- If they both do and one is a Knight but the player picks the other card, that will not cause the played Knight to be trashed.<br>- If you choose to use the Knights with Black Market (a promotional card), put a Knight directly into the Black Market deck, rather than using the randomizer card.<br>- If Sir Vander is trashed, you gain a Gold; this happens whether it is trashed on your turn or someone else's. The player who had Sir Vander is the one who gains the Gold, regardless of who played the card that trashed it."
    },
     {
       "Name": "Spoils",
@@ -2768,7 +2768,7 @@ const Cards =
          "Treasure"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- This card is not in the Supply; it can only be obtained via Bandit Camp, Marauder, and Pillage.<br>- When you play Spoils, you get +^COIN3^ to spend this turn, and return that copy of Spoils to its pile.<br>- You are not forced to play Treasures in your hand.<br>- The official FAQ stipulation about how Spoils \"can only be obtained\" applies only to gaining it from its pile. If a Spoils is trashed, it can be gained from the trash via an ability like Treasurer or Shaman; and it can be obtained from another player's hand via Masquerade.<br>- Spoils cannot be gained with Mint, since it is not in the Supply.<br>- If you play an Ambassador and reveal a Spoils, the Spoils is not returned to the Supply (since it is not in the Supply) and other players do not gain Spoils.<br>- The Spoils pile does not count towards the endgame condition."
    },
     {
       "Name": "Squire",
@@ -2777,7 +2777,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- When you play this, you get +^COIN1^, and your choice of either +2 Actions, +2 Buys, or gaining a Silver.<br>- If Squire is trashed somehow, you gain an Attack card.<br>- You can gain any Attack card available in the Supply, but if no Attack card is available, you do not gain one.<br>- You cannot gain Mercenary by trashing a Squire, since Mercenary is not in the supply."
    },
     {
       "Name": "Storeroom",
@@ -2786,7 +2786,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- Discard any number of cards from your hand, and draw as many cards as you discarded.<br>- Then, discard any number of cards - which could include cards you just drew - and you get +^COIN1^ per card you discarded that time."
    },
     {
       "Name": "Survivors",
@@ -2796,7 +2796,7 @@ const Cards =
          "Ruins"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- You either discard both cards, or put both cards back on top; you cannot just discard one card.<br>- If you do not have 2 cards in your deck, look at what you can and then shuffle your discard pile to make a new deck. If you still don't have 2 cards to look at just reveal what you can."
    },
     {
       "Name": "Urchin",
@@ -2806,7 +2806,7 @@ const Cards =
          "Attack"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- When you play this, you draw a card and get +1 Action, then each other player discards down to four cards in hand.<br>- Players who already have four or fewer cards in hand do not do anything.<br>- While Urchin is in play, when you play another Attack card, before resolving it, you may trash the Urchin.<br>- If you do, you gain a Mercenary.<br>- The Mercenary comes from the Mercenary pile, which is not in the Supply.<br>- If there are no Mercenaries left you do not gain one.<br>- If you play the same Urchin twice in one turn, such as via Procession, that does not let you trash it for a Mercenary.<br>- If you play two different Urchins however, playing the second one will let you trash the first one.<br>- You do not gain a Mercenary if you trash Urchin some other way.<br>- If you play an Urchin, and then you play a Command variant such as Band of Misfits that plays an Attack from the Supply (such as another Urchin), you may still trash your Urchin for a Mercenary.<br>- You trash Urchin and gain a Mercenary before resolving any effects of the other Attack you played, and before deciding whether to use a Way on the Attack instead of resolving its own effects.<br>- It doesn't matter if the effects of the other Attack card, when they are resolved, will actually end up having any effect on your opponents. For instance, if you play a Black Cat on your own turn, you can still trash an Urchin from play.<br>&nbsp;&nbsp;- Because you trash the Urchin before resolving the Attack, that means if you trash an Urchin by playing a Tormentor, you'll gain an Imp. And if you trash an Urchin by playing a Rogue, you can gain the Urchin from the trash.<br>- You can order Urchin's ability with other \"when you play this, first\" abilities (e.g. Pathfinding and Kiln). These still take place before the other players get to React to the Attack you played (with e.g. Beggar or Diplomat).<br>- If you play Urchin itself as a Way, you can still trash the Urchin when you play an Attack."
    },
     {
       "Name": "Vagrant",
@@ -2815,7 +2815,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- You draw a card before revealing your top card.<br>- If the top card of your deck is a Curse, Ruins, Shelter, or Victory card, it goes into your hand; otherwise it goes back on top."
    },
     {
       "Name": "Wandering Minstrel",
@@ -2824,7 +2824,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Dark Ages",
-      "FAQ": "..."
+      "FAQ": "- First draw a card, then reveal the top three cards of your deck, shuffling your discard pile if there are not enough cards in your deck.<br>- If there still are not enough after shuffling, just reveal what you can.<br>- Put the revealed Action cards on top of your deck in any order, and discard the other cards.<br>- If you didn't reveal any Action cards, no cards will be put on top."
    },
     {
       "Name": "Advance",
