@@ -37,7 +37,8 @@ function Populate(f)
 
         const TypeList = card.Type.filter((e) =>  e !== "Attack" && e !== "Augur" && e !== "Liaison" && e !== "Traveller" && e !== "Odyssey" &&
         e !== "Reserve" && e !== "Reward"  && e !== "Doom" && e !== "Clash" && e !== "Knight" && e !== "Looter" && e !== "Prize" && e !== "Wizard" && e !== "Command"
-        && e !== "Fort" && e !== "Fate" && e !== "Gathering" && e !== "Spirit" && e !== "Townsfolk" && e !== "Castle" && e !== "Zombie" && e !== "Heirloom" && e !== "Loot");
+        && e !== "Fort" && e !== "Fate" && e !== "Gathering" && e !== "Spirit" && e !== "Townsfolk" && e !== "Castle" && e !== "Zombie" && e !== "Heirloom" && e !== "Loot"
+        && e !== "Omen" && e !== "Shadow");
 
         //card background
         if(TypeList.length > 1)
@@ -211,6 +212,11 @@ function ParseFAQ(faq)
       {
          temp = splitFAQ[i].replace("COIN", "");
          final += `<img class="TextCoin" src="./Images/16px-Coin${temp}.png">`
+      }
+      else if(splitFAQ[i].startsWith("SUN"))
+      {
+         temp = splitFAQ[i].replace("SUN", "");
+         final += `<img class="TextCoin" src="./Images/16px-Sun.png">`
       }
       else if(splitFAQ[i].startsWith("DEBT"))
       {
@@ -7591,7 +7597,7 @@ const Cards =
          "Shadow"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- When you play Alley, you draw a card, get +1 Action, and discard a card.<br>- When shuffling Shadow cards, put them on the bottom. If you have multiple Shadow cards, they can go in any order at the bottom. They can also be mixed with any other cards you specifically put on the bottom, such as Fated cards from Plunder.<br>- You may wish to turn your Shadow cards sideways at the bottom of your deck, so that it is easy to remember that they are there.<br>- Shadow cards will not necessarily stay on the bottom of your deck; they are just put there when shuffling them.<br>- Shadow cards are not put on the bottom when gained, or at any time other than when shuffling them.<br>- You can look through your deck at the card backs at any time, and see where your Shadow cards are.<br>- Whenever you can normally play an Action card, you can play a Shadow card from your deck. It can be anywhere in your deck. You play it exactly as if playing it from your hand; it goes into play and you follow its instructions.<br>- When a card like Throne Room tells you to play a card from your hand, you can use that opportunity to play a Shadow card from your deck.<br>- You can play Shadow cards from your deck as if in your hand, but this does not mean the Shadow card is in your hand; for example you cannot discard it to an ability like Alley's (unless it is actually in your hand)."
    },
     {
       "Name": "Aristocrat",
@@ -7600,7 +7606,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- What matters is how many Aristocrats you have in play, not how many you played that turn. For example if you play Daimyo and then Aristocrat, you'll get +3 Actions for each play.<br>- If you have zero or 9 or 10 Aristocrats in play, it doesn't do anything.<br>- Command variants leave the card where it is, so an Aristocrat played that way will not be considered in play. If that's the first time Aristocrat has been played, there will be zero in play, so it won't do anything."
    },
     {
       "Name": "Artist",
@@ -7609,7 +7615,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- This costs ^DEBT8^.<br>- This counts itself, if you have exactly one Artist in play.<br>- This counts cards played on other turns that are still in play, such as a Samurai from a previous turn."
    },
     {
       "Name": "Change",
@@ -7618,7 +7624,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- Remember you can repay at any point during your turn, which can sometimes let you choose which thing Change will do.<br>- If you have any ^DEBT^, Change gives you +^COIN^; otherwise you trash a card from your hand, gain any card costing more ^COIN^, and take equal ^DEBT^ to the difference. For example you could trash a Copper, gain a Province, and take ^DEBT8^.<br>- You can't gain a card costing the same amount of ^COIN^ or less ^COIN^.<br>- This ignores other special aspects of cost; for example you could trash an Estate and gain an Alchemist, from Alchemy, which costs ^COIN3^ and ^POTION^<br>- The amount of ^DEBT^ you take depends on the costs of the gained and trashed cards after you gain it. If cost reduction kicks in between gaining a card and taking the ^DEBT^ (e.g., you gain a Bridge and play it immediately with Innovation), the ^DEBT^ is calculated based on the reduced costs.<br>&nbsp;&nbsp;- If you didn’t actually gain the card, you don’t take any debt. This can happen when being controlled by Possession, and this means debt will not be passed on to the player who played Possession.<br>- It is occasionally possible for cost reduction to make the gained card cost less ^COIN^ than the trashed card after gaining. In this case the ^DEBT^ incurred is the absolute value of the new ^COIN^ difference.<br>&nbsp;&nbsp;- For example, if you trash a ^COIN2^ Fisherman and gain a Silver, the Fisherman now costs ^COIN5^, and you take ^DEBT2^."
    },
     {
       "Name": "Craftsman",
@@ -7627,7 +7633,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- You gain a card even if you already had ^DEBT^."
    },
     {
       "Name": "Daimyo",
@@ -7637,7 +7643,7 @@ const Cards =
          "Command"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- This isn't optional; whatever that next non-Command Action card is, Daimyo replays it. It replays it even if the card trashed itself.<br>- Command cards, such as Daimyo itself, are not replayed; Daimyo waits for a non-Command Action card (or fails to do anything more if the turn ends before you play one).<br>- If you play two Daimyos and then e.g. a Craftsman, you'll play the Craftsman three times total - once normally and once for each Daimyo.<br>- Daimyo costs ^DEBT6^."
    },
     {
       "Name": "Fishmonger",
@@ -7647,7 +7653,7 @@ const Cards =
          "Shadow"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- When you play Fishmonger, you get +1 Buy and +^COIN1^.<br>- Contrary to the Shadows section (which says \"Whenever you can normally play an Action card…\"), if you have Capitalism, you can play a Fishmonger from your deck whenever you can play Treasures from your hand.<br>- When shuffling Shadow cards, put them on the bottom. If you have multiple Shadow cards, they can go in any order at the bottom. They can also be mixed with any other cards you specifically put on the bottom, such as Fated cards from Plunder.<br>- You may wish to turn your Shadow cards sideways at the bottom of your deck, so that it is easy to remember that they are there.<br>- Shadow cards will not necessarily stay on the bottom of your deck; they are just put there when shuffling them.<br>- Shadow cards are not put on the bottom when gained, or at any time other than when shuffling them.<br>- You can look through your deck at the card backs at any time, and see where your Shadow cards are.<br>- Whenever you can normally play an Action card, you can play a Shadow card from your deck. It can be anywhere in your deck. You play it exactly as if playing it from your hand; it goes into play and you follow its instructions.<br>- When a card like Throne Room tells you to play a card from your hand, you can use that opportunity to play a Shadow card from your deck.<br>- You can play Shadow cards from your deck as if in your hand, but this does not mean the Shadow card is in your hand; for example you cannot discard it to an ability like Alley's (unless it is actually in your hand)."
    },
     {
       "Name": "Gold Mine",
@@ -7656,7 +7662,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- You can gain a Gold even if you already have ^DEBT^.<br>- You can't gain a Gold without taking ^DEBT^."
    },
     {
       "Name": "Imperial Envoy",
@@ -7665,7 +7671,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- This works even if you already had ^DEBT^."
    },
     {
       "Name": "Kitsune",
@@ -7676,7 +7682,7 @@ const Cards =
          "Omen"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- First the +1^SUN^ happens, which may trigger a Prophecy; then you choose two different options, and do them in the order listed."
    },
     {
       "Name": "Litter",
@@ -7685,7 +7691,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- This works even if you already had ^DEBT^."
    },
     {
       "Name": "Mountain Shrine",
@@ -7695,7 +7701,7 @@ const Cards =
          "Omen"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- This costs ^DEBT5^.<br>- It doesn't matter who trashed an Action or when, just that there is one in the trash. The Action in the trash can be one you just trashed with the same play of Mountain Shrine.<br>- If you trash a Fortress or Lich with Mountain Shrine, it will leave the trash before Mountain Shrine checks if there are any Actions in the trash."
    },
     {
       "Name": "Ninja",
@@ -7706,7 +7712,7 @@ const Cards =
          "Shadow"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- When you play Ninja, you draw a card, and each other player discards down to 3 cards in hand.<br>- When shuffling Shadow cards, put them on the bottom. If you have multiple Shadow cards, they can go in any order at the bottom. They can also be mixed with any other cards you specifically put on the bottom, such as Fated cards from Plunder.<br>- You may wish to turn your Shadow cards sideways at the bottom of your deck, so that it is easy to remember that they are there.<br>- Shadow cards will not necessarily stay on the bottom of your deck; they are just put there when shuffling them.<br>- Shadow cards are not put on the bottom when gained, or at any time other than when shuffling them.<br>- You can look through your deck at the card backs at any time, and see where your Shadow cards are.<br>- Whenever you can normally play an Action card, you can play a Shadow card from your deck. It can be anywhere in your deck. You play it exactly as if playing it from your hand; it goes into play and you follow its instructions.<br>- When a card like Throne Room tells you to play a card from your hand, you can use that opportunity to play a Shadow card from your deck.<br>- You can play Shadow cards from your deck as if in your hand, but this does not mean the Shadow card is in your hand; for example you cannot discard it to an ability like Alley's (unless it is actually in your hand)."
    },
     {
       "Name": "Poet",
@@ -7716,7 +7722,7 @@ const Cards =
          "Omen"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- Cards with ^DEBT^ in their costs do not cost \"^COIN3^ or less.\"<br>- The card goes back on top of your deck if it doesn't get put into your hand."
    },
     {
       "Name": "Rice",
@@ -7725,7 +7731,7 @@ const Cards =
          "Treasure"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- For example, if you had a Daimyo, a Litter, a Fishmonger, three Coppers, and Rice in play, the types would be Action, Command, Shadow, and Treasure, so Rice would make +^COIN4^."
    },
     {
       "Name": "Rice Broker",
@@ -7734,7 +7740,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- If you trash a card that's both a Treasure and an Action, you get +2 Cards and then +5 Cards. If you trash a card with neither type, such as Province, you don't draw any cards."
    },
     {
       "Name": "River Shrine",
@@ -7744,7 +7750,7 @@ const Cards =
          "Omen"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- It doesn't matter if you gained cards in your Action phase, only if you did in your Buy phase.<br>- If you play multiple River Shrines, they can all gain a card, provided you don't gain a card in your Buy phase.<br>- Trashing cards with this is optional; you can gain a card even if you didn't trash any cards.<br>- If you have multiple Buy phases, such as via Continue, River Shrine only gains you a card if you didn't gain a card in any of those Buy phases.<br>- Normally, buying Continue will make you gain a card, which means River Shrine can't gain a card. However, you can still have multiple Buy phases that don't ever gain a card (by buying Launch, or buying Continue while Possessed).<br>- If this gains a 2nd River Shrine and you play it with Rush, that River Shrine will also gain a card."
    },
     {
       "Name": "Riverboat",
@@ -7754,7 +7760,7 @@ const Cards =
          "Duration"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- In setup, choose a non-Duration Action card costing exactly ^COIN5^ that isn't being used this game, and set a copy of it aside. You can use the randomizers to find such a card.<br>- If that card also requires setup, do that setup too.<br>- When you play Riverboat, it plays the set aside card at the start of your next turn. This doesn't move the set aside card; it stays set aside, even if it has instructions on it that would move it.<br>- Riverboat is normally discarded in your next turn's Clean-up, but it stays in play as long as the card it plays would have, which sometimes is longer (such as a Crown, from Empires, used on a Duration card)<br>- This can't choose non-Supply cards that cost ^COIN5^ (like Disciple).<br>- This can choose ^COIN5^'s in a split pile (like Bustling Village).<br>- If you get the Knights randomizer, you randomly pick one of the 9 Knights that cost ^COIN5^.<br>- The chosen card does not have a pile, which means that if it's Wild Hunt, it can't gather  ^VP^.<br>- Unlike Band of Misfits, Riverboat is not a Command card."
    },
     {
       "Name": "Ronin",
@@ -7764,7 +7770,7 @@ const Cards =
          "Shadow"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- When you play this, you draw cards one at a time until you have 7 cards in hand, or can't draw any more; if you already had 7 or more cards in hand, you don't draw any.<br>- When shuffling Shadow cards, put them on the bottom. If you have multiple Shadow cards, they can go in any order at the bottom. They can also be mixed with any other cards you specifically put on the bottom, such as Fated cards from Plunder.<br>- You may wish to turn your Shadow cards sideways at the bottom of your deck, so that it is easy to remember that they are there.<br>- Shadow cards will not necessarily stay on the bottom of your deck; they are just put there when shuffling them.<br>- Shadow cards are not put on the bottom when gained, or at any time other than when shuffling them.<br>- You can look through your deck at the card backs at any time, and see where your Shadow cards are.<br>- Whenever you can normally play an Action card, you can play a Shadow card from your deck. It can be anywhere in your deck. You play it exactly as if playing it from your hand; it goes into play and you follow its instructions.<br>- When a card like Throne Room tells you to play a card from your hand, you can use that opportunity to play a Shadow card from your deck.<br>- You can play Shadow cards from your deck as if in your hand, but this does not mean the Shadow card is in your hand; for example you cannot discard it to an ability like Alley's (unless it is actually in your hand)."
    },
     {
       "Name": "Root Cellar",
@@ -7773,7 +7779,7 @@ const Cards =
          "Action"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- This works even if you already had ^DEBT^."
    },
     {
       "Name": "Rustic Village",
@@ -7783,7 +7789,7 @@ const Cards =
          "Omen"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- First the +1^SUN^ happens, which may trigger a Prophecy; then you get +1 Card, +2 Actions, and may discard 2 cards (including the one just drawn) for another +1 Card."
    },
     {
       "Name": "Samurai",
@@ -7794,7 +7800,7 @@ const Cards =
          "Attack"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- When you play a Samurai, each other player discards down to 3 cards in hand. After that the Samurai stays in play, and produces +^COIN1^ at the start of each of your turns for the rest of the game. It doesn't make players discard again."
    },
     {
       "Name": "Snake Witch",
@@ -7804,7 +7810,7 @@ const Cards =
          "Attack"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- Revealing your hand, if all of the cards in it have different names, is optional. If you do, you return Snake Witch to its pile, and if you did, each other player gains a Curse.<br>- If you can't return Snake Witch to its pile for some reason, the other players do not gain a Curse.<br>- Note that you reveal your hand after getting the +1 Card from Snake Witch.<br>- If you have no cards in hand, you have no duplicates."
    },
     {
       "Name": "Tanuki",
@@ -7814,7 +7820,7 @@ const Cards =
          "Shadow"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- When you play this, you trash a card from your hand, and gain a card costing up to ^COIN2^ more than it, like when playing Remodel.<br>- When shuffling Shadow cards, put them on the bottom. If you have multiple Shadow cards, they can go in any order at the bottom. They can also be mixed with any other cards you specifically put on the bottom, such as Fated cards from Plunder.<br>- You may wish to turn your Shadow cards sideways at the bottom of your deck, so that it is easy to remember that they are there.<br>- Shadow cards will not necessarily stay on the bottom of your deck; they are just put there when shuffling them.<br>- Shadow cards are not put on the bottom when gained, or at any time other than when shuffling them.<br>- You can look through your deck at the card backs at any time, and see where your Shadow cards are.<br>- Whenever you can normally play an Action card, you can play a Shadow card from your deck. It can be anywhere in your deck. You play it exactly as if playing it from your hand; it goes into play and you follow its instructions.<br>- When a card like Throne Room tells you to play a card from your hand, you can use that opportunity to play a Shadow card from your deck.<br>- You can play Shadow cards from your deck as if in your hand, but this does not mean the Shadow card is in your hand; for example you cannot discard it to an ability like Alley's (unless it is actually in your hand)."
    },
     {
       "Name": "Tea House",
@@ -7824,7 +7830,7 @@ const Cards =
          "Omen"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- First the +1^SUN^ happens, which may trigger a Prophecy; then you get the +1 Card, +1 Action, and +^COIN2^."
    },
     {
       "Name": "Amass",
@@ -7833,7 +7839,7 @@ const Cards =
          "Event"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- Duration cards in play that were played on previous turns will stop Amass from gaining an Action card.<br>- Cards you played this turn but which are no longer in play, such as Horse from Menagerie, will not."
    },
     {
       "Name": "Asceticism",
@@ -7842,7 +7848,7 @@ const Cards =
          "Event"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- For example you could pay an additional ^COIN3^ - so ^COIN5^ total - and trash 3 cards from your hand."
    },
     {
       "Name": "Continue",
@@ -7851,7 +7857,7 @@ const Cards =
          "Event"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- You can only buy this once per turn. When you do, you gain an Action card costing up to ^COIN4^, that isn't an Attack card; you return to your Action phase; and you play the Action card you gained.<br>- This doesn't use up any of your Action plays for the turn.<br>- You also get +1 Action and +1 Buy.<br>- Returning to your Action phase doesn't cause \"start of turn\" abilities to repeat; however when your Buy phase happens again after that, \"start of Buy phase\" abilities can repeat.<br>- If the gained card gets moved elsewhere (e.g. Rapid Expansion), Continue can't play it, but you still return to your Action phase and get +1 Action and +1 Buy.<br>- The card is gained in your Buy phase, but played in your Action phase. This matters for cards like River Shrine (which cares if you gained cards in your Buy phase) and Crown (which cares which phase it was played in)."
    },
     {
       "Name": "Credit",
@@ -7860,7 +7866,7 @@ const Cards =
          "Event"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- This can't gain cards with ^DEBT^ in the cost.<br>- It also can't gain cards with ^POTION^ in the cost.<br>- If you play Possession and have them buy Credit, they don't gain the card, which means there's no ^DEBT^ given to any player.<br>- If the gained card's cost changes when you gain it (e.g., the card is Destrier), take ^DEBT^ based on the new cost, not the old cost.<br>&nbsp;&nbsp;- If its cost somehow changes to include ^DEBT^ or ^POTION^ (e.g. Credit gains a ^COIN6^ Wayfarer, use Architects' Guild to gain Gondola and play Lurker to gain either Transmute or Artist), only the ^COIN^ of the new cost matters; the ^DEBT^ and ^POTION^ are ignored."
    },
     {
       "Name": "Foresight",
@@ -7869,7 +7875,7 @@ const Cards =
          "Event"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- The card is added to your hand after drawing your next hand."
    },
     {
       "Name": "Gather",
@@ -7878,7 +7884,7 @@ const Cards =
          "Event"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- You gain the three cards in the order listed; none are optional.<br>- If you can't gain one—for example if nothing in the Supply costs exactly ^COIN4^—you still gain the others."
    },
     {
       "Name": "Kintsugi",
@@ -7887,7 +7893,7 @@ const Cards =
          "Event"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- You have to remember if you gained a Gold this game. If you have, buying Kintsugi will both trash and gain a card, even if you no longer have the Gold.<br>- If trashing a card causes you to gain a Gold (e.g. you discard a Market Square), that will let you gain a card costing up to ^COIN2^ more."
    },
     {
       "Name": "Practice",
@@ -7896,7 +7902,7 @@ const Cards =
          "Event"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- If you use this on a Duration card, you may wish to tilt the card to remind you that you played it twice."
    },
     {
       "Name": "Receive Tribute",
@@ -7905,7 +7911,7 @@ const Cards =
          "Event"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- The Action cards you gain need to all have different names from each other and from cards you have in play. You gain them one at a time, in any order. You don't have to gain the full three."
    },
     {
       "Name": "Sea Trade",
@@ -7914,7 +7920,7 @@ const Cards =
          "Event"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- First count how many Action cards you have in play. Draw that many cards, then trash up to that many cards from your hand. Drawing cards is not optional, but trashing cards is. If you have no Action cards in play, you won't draw any cards, and then won't be able to trash. While this draws cards, it's too late to play more Treasures in this Buy phase."
    },
     {
       "Name": "Approaching Army",
@@ -7923,7 +7929,7 @@ const Cards =
          "Prophecy"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- The Attack card added in setup is in addition to the usual 10 Kingdom cards, even if those already included an Attack card. For split piles (from Allies and Empires), a pile is an Attack pile if the randomizer card for it is an Attack.<br>- The added pile is a regular Kingdom card pile, and can be gained from like other piles. This setup occurs at the start of the game, and so affects the game even if the Prophecy never happens.<br>- Once the Prophecy has happened, you get +^COIN1^ from each Attack card you play; for Duration Attacks, this applies only on the turn the Duration Attack was played.<br>- The +^COIN1^ is the last thing the Attack card does when it's played. You get the +^COIN1^ even if you didn't follow the instructions on the Attack card; for example if you used a Way (from Menagerie)"
    },
     {
       "Name": "Biding Time",
@@ -7932,7 +7938,7 @@ const Cards =
          "Prophecy"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- Instead of discarding unplayed cards in Clean-up, you set them aside, and put them back into your hand at the start of your next turn."
    },
     {
       "Name": "Bureaucracy",
@@ -7941,7 +7947,7 @@ const Cards =
          "Prophecy"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- This includes cards gained from outside the Supply (such as Loot, from Plunder). Cards with ^DEBT^ costs don't cost exactly ^COIN0^, and so come with a Copper."
    },
     {
       "Name": "Divine Wind",
@@ -7950,7 +7956,7 @@ const Cards =
          "Prophecy"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- The 10 Kingdom card Supply piles used this game are removed, as well as an 11th pile if something added one (such as Young Witch's Bane pile, from Cornucopia).<br>- Ruins (from Dark Ages), Potions (from Alchemy), and Platinum and Colony (from Prosperity) are not removed.<br>- Deal out 10 new Kingdom cards. Do any Setup for them that they require, including things like putting out the Potions if necessary. Do not give out Heirlooms (from Nocturne). Do not re-determine whether or not to use Shelters (from Dark Ages) or Platinum and Colony. Deal out an Ally (from Allies) if you get a Liaison and didn't already have one.<br>- The removed piles are gone; they no longer count as empty piles if empty, and cards can't be returned to those piles. Players can continue playing with cards they got from those piles though.<br>- Tokens on the removed piles are no longer on them (such as tokens from Teacher, from Adventures). Traits (from Plunder) and Obelisk (from Empires) still affect their removed piles, and the Bane (for Young Witch) is still the Bane.<br>- Search (from Plunder) does not trigger when piles are removed.<br>- \"In games using this\" abilities, like Shaman's (from Plunder), continue to function for removed piles.<br>- Any other cards that were involved in the original kingdom (Ferryman's pile, Riverboat's card, Page's upgrades, etc.) are not removed after Divine Wind.<br>- If a singular card has already been used in the original kingdom (e.g. it was used by Riverboat, or it was in the Black Market deck), the pile cannot be one of the 10 new piles.<br>- Removed Adventures tokens return to their player (and they can place the token again). Any other tokens (e.g.  ^VP^ for Farmers' Market, or tokens for Family of Inventors) are removed forever.<br>- Players only get an initial Favor token the first time a Liaison is added to the game. If the original kingdom had a Liaison, and Divine Wind adds another one, you don't do that setup again.<br>- You can't exchange cards with a removed pile. That means, for example, if you have a Peasant still in your deck when the Divine Wind blows through, you won't be able to be able to replace it with a Soldier, and if you have a Vampire it will no longer be able to turn into a Bat (or vice versa).<br>&nbsp;&nbsp;- Cards not in the Supply are not removed, so you can still exchange your Soldier for a Fugitive.<br>- Cost-reduction does not apply to cards that aren't yet in the game. This means if you play Highway and then activate Divine Wind, the cost reduction does not apply when Young Witch chooses its Bane.<br>- A Druid in the original kingdom will keep its 3 Boons after Divine Wind happens. A Druid added in the new kingdom will set aside whatever 3 Boons are on top of the deck.<br>&nbsp;&nbsp;- If there aren't enough Boons left (e.g. too many are set aside due to Blessed Village), Druid sets aside as many as possible."
    },
     {
       "Name": "Enlightenment",
@@ -7959,7 +7965,7 @@ const Cards =
          "Prophecy"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- Treasures are Actions for all purposes. For example if you use Rice Broker to trash a Copper, it's an Action and still a Treasure, so you draw 7 cards total.<br>- Treasures can still be played in the Buy phase to do what they normally do, but if played in the Action phase, they produce +1 Card and +1 Action rather than everything they normally do.<br>- You can turn these Treasures sideways to remind yourself that they didn't make ^COIN^.<br>- Since Treasures are Actions, they can be used with Ways (from Menagerie) to get something other than +1 Card and +1 Action.<br>- Highwayman (from Allies) can't stop your first Treasure from being used in an Action phase for +1 Card and +1 Action.<br>- If you use a card like Black Market, Storyteller, or Herb Gatherer to play a Treasure in the Action phase, it will still give you +1 Card and +1 Action instead of its usual effect.<br>- Enlightenment even applies to Treasure cards that are already Actions; if you play Crown, Coronet, or an Action affected by Capitalism in the Action phase, you still get +1 Card and +1 Action instead of the card's usual effect.<br>- Enlightenment only affects cards and not piles. This means that the Copper pile is not an Action pile for e.g. Training or Populate.<br>- Treasures still remain as Actions when scoring (for e.g. Vineyard).<br>- A card either has a type or it doesn't. This means that Crown does not gain a 3rd type (for Courtier).<br>- Enlightenment prevents you from following the Treasure's instructions. If you play a Treasure as Way of the Chameleon, it makes you follow its instructions (unlike the other Ways), which means Enlightenment will stop that and make you get +1 Card and +1 Action instead.<br>&nbsp;&nbsp;- This only applies for your Action phase. If you play a Gold as Way of the Chameleon in your Buy phase, you get +3 Cards."
    },
     {
       "Name": "Flourishing Trade",
@@ -7968,7 +7974,7 @@ const Cards =
          "Prophecy"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- The cost lowering applies to all cards everywhere, including cards in the Supply, in hands, and in Decks.<br>- It's cumulative with other things that lower costs, like Bridge from Intrigue.<br>- If you have Action plays left in your Buy phase, you can use them as Buys instead.<br>- For example if you play no Actions at all, you have one Action play you didn't use, and so can use that as an extra Buy.<br>- What's relevant here is Action plays, not Action cards; you get one Action play per turn normally, and can increase that with cards like Rustic Village.<br>- Cards still cost ^COIN1^ less when scoring (which matters for Plateau Shepherds)."
    },
     {
       "Name": "Good Harvest",
@@ -7977,7 +7983,7 @@ const Cards =
          "Prophecy"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- For example if you play 4 Coppers and a Silver, you'd get +2 Buys and +^COIN2^ total from Good Harvest.<br>- If you played a Treasure in the same turn before removing the last ^SUN^ token from Good Harvest, it doesn't retroactively give you +1 Buy and +^COIN1^."
    },
     {
       "Name": "Great Leader",
@@ -7986,7 +7992,7 @@ const Cards =
          "Prophecy"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- Since every Action card you play gives you at least +1 Action, you'll always be able to play all of your Action cards, barring explicit exceptions like Snowy Village (from Menagerie).<br>- As Prophecies activate immediately upon removing the last ^SUN^ token, the Omen that removed the last token will receive +1 Action."
    },
     {
       "Name": "Growth",
@@ -7995,7 +8001,7 @@ const Cards =
          "Prophecy"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- This can chain; you could gain a Platinum, gain a Gold due to Growth happening for Platinum, gain a Silver due to Growth happening for Gold, then gain an Estate due to Growth happening for Silver.<br>- This is not optional; if you gain a Treasure, you have to gain a cheaper card if you can."
    },
     {
       "Name": "Harsh Winter",
@@ -8004,7 +8010,7 @@ const Cards =
          "Prophecy"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- This applies to both Supply piles and non-Supply piles.<br>- Cards gained from the trash affect the pile the card is from, if any.<br>- Coppers and Estates are \"from\" their piles, even if they're cards the players started with in their decks.<br>- When it's not your turn, gaining a card neither puts ^DEBT^ on the pile nor removes ^DEBT^ from the pile.<br>- Gaining a card with no pile (e.g. using Treasurer to gain an Heirloom) won't add ^DEBT^ anywhere.<br>- Reward and Loot are piles and can have ^DEBT^; the Black Market deck is not.<br>&nbsp;&nbsp;- The cards that Travellers upgrade themselves into may be either all in a single pile or in multiple piles, depending on the players' preference. Which choice you make about organizing these cards will determine how Harsh Winter assigns ^DEBT^ to them, in the (relatively) unlikely event that anybody gains them.<br>- If you gain a card in your Buy phase in the same game as Tax, you can order the effects. Usually, you'll want to resolve Tax first.<br>&nbsp;&nbsp;- If the pile has ^DEBT^, your choices are: take the ^DEBT^ with Tax and add ^DEBT2^ with Harsh Winter; or take the ^DEBT^ with Harsh Winter and take ^DEBT0^ with Tax.<br>&nbsp;&nbsp;- If the pile has no ^DEBT^, your choices are: take ^DEBT0^ with Tax and then add ^DEBT2^ with Harsh Winter; or add ^DEBT2^ with Harsh Winter and then take the ^DEBT2^ with Tax."
    },
     {
       "Name": "Kind Emperor",
@@ -8013,7 +8019,7 @@ const Cards =
          "Prophecy"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- You gain any Action to your hand, regardless of cost. This is not optional.<br>- When the last ^SUN^ is removed, this applies immediately, in the middle of resolving the Omen, and only the player who removed the ^SUN^ gains an Action then.<br>- If you remove the last ^SUN^ at the start of your turn (e.g. you play a Poet with Delay), you'll gain 2 Actions to your hand."
    },
     {
       "Name": "Panic",
@@ -8022,7 +8028,7 @@ const Cards =
          "Prophecy"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- This makes Treasures into one-use cards.<br>- This can return Treasures to non-Supply piles, but can't return cards with no piles, e.g. Heirlooms (from Nocturne).<br>- Loot (from Plunder) is returned to the top of the pile.<br>- This applies even to Action-Treasures that are played during the Action phase, such as Crown or Actions under the influence of Capitalism.<br>- Jewels is never discarded from play, so it does not get returned to its pile."
    },
     {
       "Name": "Progress",
@@ -8031,7 +8037,7 @@ const Cards =
          "Prophecy"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- This is not optional; all gained cards go onto your deck. This includes cards gained when it's not your turn<br>- This also applies to cards that would normally be gained to unusual locations, such as a Ghost Town or anything gained with Blockade.<br>- However, the stop-moving rule can in some cases prevent a card from being placed on your deck. For instance, you may use a Sleigh to move a gained card into your hand; if you do, Progress will no longer be able to move it onto your deck."
    },
     {
       "Name": "Rapid Expansion",
@@ -8040,7 +8046,7 @@ const Cards =
          "Prophecy"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- This is not optional.<br>- You can order playing each card at the start of your next turn, relative to other such cards and also anything else that happens at the start of that turn.<br>- This even applies to cards that would ordinarily be gained directly to your hand for immediate use. For instance, if you use Mine while Rapid Expansion is in effect, the gained Treasure will be set aside and can't be played on the current turn.<br>- The stop-moving rule can in some cases allow you to interrupt Rapid Expansion's effect. For instance, if you gain a Villa while Rapid Expansion is in effect, you get two competing \"when you gain this\" movement instructions: Villa telling you to put it in your hand, and Rapid Expansion telling you to set it aside. Since these two instructions activate at the same time, you can choose which one to follow first (and then the other will be blocked by the stop-moving rule). However, this doesn't apply in the case of cards such as Mine (see above) because of the No Visiting rule: in the case of Mine, the Treasure is gained directly to your hand, rather than moved to your hand at a time that conflicts with Rapid Expansion."
    },
     {
       "Name": "Sickness",
@@ -8049,6 +8055,6 @@ const Cards =
          "Prophecy"
       ],
       "Expansion": "Rising Sun",
-      "FAQ": "..."
+      "FAQ": "- You can choose to gain a Curse even if the Curse pile is empty, or to discard cards even if you have fewer than 3 cards in hand (in which case, discard as many as you can).<br>"
    },
    ]
